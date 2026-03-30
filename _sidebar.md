@@ -1,36 +1,49 @@
 - [首页](/)
-- [项目概述](overview/)
+
+- **项目概述**
+  - [项目介绍](overview/)
   - [愿景与使命](overview/vision.md)
-  - [目标用户](overview/users.md)
-  - [核心价值](overview/value.md)
-  - [竞品分析](overview/competitors.md)
-- [产品方案](product/)
-  - [硬件产品](product/hardware.md)
-  - [课程体系](product/curriculum.md)
-  - [服务体系](product/service.md)
-  - [竞赛体系](product/competition.md)
+
+- **产品方案**
+  - [产品概述](product/)
+
 - **商业模式** :rocket:
-  - [学校社团课](business/school.md)
-  - [晚托班合作](business/daycare.md)
-  - [C端周末班](business/weekend.md)
-- [运营手册](operations/)
-  - [开业筹备](operations/startup.md)
-  - [日常运营](operations/daily.md)
-  - [师资管理](operations/teachers.md)
-  - [家长服务](operations/parents.md)
-  - [安全管理](operations/safety.md)
-- [财务分析](finance/)
-  - [成本结构](finance/cost.md)
-  - [定价策略](finance/pricing.md)
-  - [盈利模型](finance/profit.md)
-- [市场拓展](marketing/)
-  - [BD策略](marketing/bd.md)
-  - [谈判话术](marketing/negotiation.md)
-  - [招生策略](marketing/enrollment.md)
-- [附录](appendix/)
-  - [合同模板](appendix/contracts.md)
-  - [营销物料](appendix/marketing.md)
-  - [运营工具](appendix/tools.md)
+  - [模式总览](business/)
+  
+  - **学校社团课**
+    - [方案概述](business/school/)
+    - [市场机会](business/school/01-overview.md)
+    - [合作模式](business/school/02-model.md)
+    - [课程体系](business/school/03-curriculum.md)
+    - [谈判策略](business/school/04-negotiation.md)
+    - [执行SOP](business/school/05-operations.md)
+    - [财务模型](business/school/06-finance.md)
+    - [风险管控](business/school/07-risk.md)
+    - [附件模板](business/school/08-appendix.md)
+  
+  - **晚托班合作**
+    - [方案概述](business/daycare/)
+    - [市场机会](business/daycare/01-overview.md)
+    - [合作模式](business/daycare/02-models.md)
+    - [产品服务](business/daycare/03-product.md)
+    - [运营手册](business/daycare/04-operations.md)
+    - [财务模型](business/daycare/05-finance.md)
+  
+  - **C端周末班**
+    - [方案概述](business/weekend/)
+    - [市场定位](business/weekend/01-overview.md)
+    - [产品体系](business/weekend/02-product.md)
+    - [获客策略](business/weekend/03-acquisition.md)
+    - [运营标准](business/weekend/04-operations.md)
+    - [财务模型](business/weekend/05-finance.md)
+    - [竞争壁垒](business/weekend/06-barrier.md)
+
+- **运营手册**
+  - [运营概述](operations/)
+
+- **附录**
+  - [更新日志](changelog.md)
+  - [贡献指南](CONTRIBUTING.md)
+
 - **链接**
   - [GitHub](https://github.com/flybear16/otto123)
-  - [更新日志](changelog.md)
