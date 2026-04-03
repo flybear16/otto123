@@ -44,6 +44,7 @@
     - [财务模型](/business/weekend/05-finance.md)
     - [竞争壁垒](/business/weekend/06-barrier.md)
   - [财务模型](/business/financial-model.md)
+  - [单元模型分析](/business/unit-model-analysis.md)
 
 - **4. 增长** :chart_with_upwards_trend:
   - [增长概述](/growth/)

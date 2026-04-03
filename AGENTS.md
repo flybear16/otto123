@@ -1,7 +1,7 @@
 # PROJECT KNOWLEDGE BASE
 
-**Generated:** 2026-04-02 23:16:25
-**Commit:** 40a9455
+**Generated:** 2026-04-04 02:15:00
+**Commit:** 24f922a
 **Branch:** main
 
 ## OVERVIEW
@@ -17,6 +17,7 @@ otto123/（一堂五步法）
 ├── business/                # 3. 商业模式（school/ daycare/ weekend/）
 ├── growth/                  # 4. 增长（运营手册、课程体系）
 ├── barriers/                # 5. 壁垒（核心价值主张）
+├── yitang/                  # 一堂课程学习资料
 ├── src/                     # 源代码占位（独立仓库）
 ├── _archive/prd/            # PRD 开发过程存档
 ├── _media/                  # 静态资源（logo等）
@@ -28,11 +29,12 @@ otto123/（一堂五步法）
 | 任务 | 位置 | 说明 |
 |------|------|------|
 | 了解项目 | `README.md` | 项目整体介绍 |
-| 项目概述 | `overview/` | 愿景、用户画像、价值主张 |
+| 项目概述 | `needs/` `solution/` | 需求分析、解决方案 |
 | 学校社团课 | `business/school/` | 完整分析文档 |
 | 晚托班方案 | `business/daycare/` | 晚托班商业模式 |
 | C端周末班 | `business/weekend/` | 周末/假期班方案 |
-| 运营SOP | `operations/` | 运营手册 |
+| 运营SOP | `growth/` | 运营手册、课程体系 |
+| 一堂课程 | `yitang/` | 一堂五步法学习资料 |
 | PRD 文档 | `_archive/prd/compound/` | 产品需求文档 |
 
 ## CONVENTIONS
