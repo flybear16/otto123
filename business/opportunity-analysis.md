@@ -264,9 +264,9 @@
 ### 8.3 关联文档
 
 - [商业模式总览](README.md)
-- [学校社团课方案](school.md)
-- [晚托班合作方案](daycare.md)
-- [C端周末班方案](weekend.md)
+- [学校社团课方案](school/)
+- [晚托班合作方案](daycare/)
+- [C端周末班方案](weekend/)
 
 ---
 

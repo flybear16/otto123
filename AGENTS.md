@@ -18,9 +18,9 @@ otto123/
 │   ├── school/              # 学校社团课详情
 │   ├── weekend/             # C端周末班详情
 │   └── daycare/             # 晚托班详情
-├── overview/                # 愿景与使命
-├── product/                 # 产品文档
 ├── operations/              # 运营文档
+├── src/                     # 源代码占位（独立仓库）
+├── _archive/prd/            # PRD 开发过程存档
 ├── _media/                  # 静态资源（logo等）
 └── README.md               # 项目入口
 ```

@@ -33,18 +33,8 @@ otto123/
 │   └── weekend/                # C端周末班
 ├── 📁 operations/              # 运营手册
 ├── 📁 _archive/prd/            # PRD 开发过程存档
-├── 📁 src/                     # 源代码
-│   ├── firmware/               # OTTO固件代码
-│   ├── curriculum/             # 课程资源（教案、PPT、视频）
-│   └── tools/                  # 工具脚本
-├── 📁 assets/                  # 静态资源
-│   ├── images/                 # 图片素材
-│   ├── videos/                 # 视频素材
-│   └── templates/              # 可编辑模板
-├── 📁 templates/               # 文档模板
-│   ├── contracts/              # 合同模板
-│   ├── marketing/              # 营销物料模板
-│   └── operations/             # 运营工具模板
+├── 📁 src/                     # 源代码（独立仓库）
+├── 📁 _media/                  # Docsify 静态资源（logo、favicon）
 └── 📄 README.md                # 本文件
 ```
 

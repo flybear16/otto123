@@ -22,13 +22,11 @@ docsify serve .
 ```
 overview/          # 项目概述（愿景、用户画像、价值主张、竞品分析、里程碑）
 product/           # 产品方案
-business/          # 商业模式（school/ daycare/ weekend/）
+business/          # 商业模式（school/ daycare/ weekend/）+ 市场分析文件
 operations/        # 运营手册（开业、日常、师资、家长、安全）
-finance/           # 财务分析
-marketing/         # 市场拓展
-appendix/          # 附录（合同模板、物料素材）
-screenshots/       # 截图资源
+src/               # 源代码占位（固件/课程/工具，独立仓库）
 _archive/prd/      # PRD 开发过程存档（brainstorm/ compound/ ideation/ plan/ review/ work/ plans/）
+_media/            # Docsify 静态资源（logo、favicon、PWA manifest）
 ```
 
 最终 PRD 位于 `_archive/prd/compound/2026-04-03-otto-robot-prd-final.md`，定义了 33 项需求。
