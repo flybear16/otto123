@@ -1,12 +1,12 @@
 ---
 date: 2026-04-03
 topic: otto-robot-education-platform
-version: v3-final
+version: v3-终稿
 ---
 
-# Otto Robot 教育平台 PRD（终稿）
+# Otto Robot 教育平台产品需求文档（终稿）
 
-## 1. Problem Frame
+## 1. 问题定义
 
 初中晚托班市场同质化严重，缺乏差异化竞争力。基于 Otto DIY 开源机器人进行二次研发，打造一套 **桌面 AI 人形机器人教育平台**，作为晚托班的特色兴趣课程内容，同时提供课间娱乐和机构引流价值。
 
@@ -66,7 +66,7 @@ flowchart TB
 
 ---
 
-## 3. Requirements
+## 3. 功能需求
 
 ### 3.1 语音交互能力
 
@@ -204,7 +204,7 @@ flowchart TB
 
 ---
 
-## 5. Success Criteria
+## 5. 成功标准
 
 | 指标 | 标准 |
 |------|------|
@@ -217,7 +217,7 @@ flowchart TB
 
 ---
 
-## 6. Scope Boundaries
+## 6. 范围边界
 
 - **不含**：硬件量产和供应链管理
 - **不含**：具体教学大纲编写（由教育团队负责）
@@ -229,7 +229,7 @@ flowchart TB
 
 ---
 
-## 7. Key Decisions
+## 7. 关键决策
 
 | 决策 | 理由 |
 |------|------|
@@ -245,7 +245,7 @@ flowchart TB
 
 ---
 
-## 8. Dependencies / Assumptions
+## 8. 依赖与假设
 
 - Otto DIY 开源项目持续维护，ESP32-S3 + PSRAM 生态稳定
 - 大模型 API（Qwen/DeepSeek 等）持续可用且成本可控
@@ -256,9 +256,9 @@ flowchart TB
 
 ---
 
-## 9. Outstanding Questions
+## 9. 待解决问题
 
-### 9.1 Resolved During Review
+### 9.1 评审阶段已解决
 
 | 问题 | 结论 |
 |------|------|
@@ -275,7 +275,7 @@ flowchart TB
 | 编程安全 | 安全范围检测 + 紧急停止按钮 + 远程中断 |
 | 教师推送负担 | 推送内容资源库，预置课程包 |
 
-### 9.2 Deferred to Implementation
+### 9.2 延期至实施阶段
 
 - [Affects R12-R13] I2C 多路复用器具体电路设计
 - [Affects R14] Blockly vs 自研编程工具选型
@@ -286,7 +286,7 @@ flowchart TB
 
 ---
 
-## 10. Appendix
+## 10. 附录
 
 ### 10.1 参考资料
 
@@ -316,4 +316,4 @@ flowchart TB
 |------|------|------|
 | v1 | 2026-04-03 | 初始版本，6 大模块 27 条需求 |
 | v2 | 2026-04-03 | Plan 阶段补充：关键参数、离线降级、课程形态、推送时机等 |
-| v3-final | 2026-04-03 | Review 后终稿：新增 R28-R33、非功能性需求、通信架构；修改硬件规格、竞赛分组、安全过滤策略、音乐配合方案；共 33 条需求 |
+| v3-终稿 | 2026-04-03 | Review 后终稿：新增 R28-R33、非功能性需求、通信架构；修改硬件规格、竞赛分组、安全过滤策略、音乐配合方案；共 33 条需求 |
