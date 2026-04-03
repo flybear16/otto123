@@ -1,7 +1,7 @@
 ---
 title: "feat: Create missing documentation files"
 type: feat
-status: active
+status: completed
 date: 2026-04-04
 ---
 

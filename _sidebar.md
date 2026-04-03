@@ -28,8 +28,7 @@
     - [合作模式](business/daycare/02-models.md)
     - [产品服务](business/daycare/03-product.md)
     - [运营手册](business/daycare/04-operations.md)
-    <!-- TODO: 05-finance.md 待创建 -->
-    <!-- - [财务模型](business/daycare/05-finance.md) -->
+    - [财务模型](business/daycare/05-finance.md)
   
   - **C端周末班**
     - [方案概述](business/weekend/)
@@ -42,6 +41,11 @@
 
 - **运营手册**
   - [运营概述](operations/)
+  - [开业筹备](operations/startup.md)
+  - [日常运营](operations/daily.md)
+  - [师资管理](operations/teachers.md)
+  - [家长服务](operations/parents.md)
+  - [安全管理](operations/safety.md)
 
 - **附录**
   - [更新日志](changelog.md)
