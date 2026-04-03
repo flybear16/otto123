@@ -1,18 +1,19 @@
 - [首页](/)
 
-- **项目概述**
-  - [项目介绍](/overview/)
-  - [💡 项目起源：原始点子](/overview/00-项目起源-原始点子.md)
-  - [愿景与使命](/overview/vision.md)
-  - [目标用户画像](/overview/02-目标用户画像.md)
-  - [核心价值主张](/overview/03-核心价值主张.md)
-  - [竞品分析](/overview/04-竞品分析.md)
-  - [项目里程碑](/overview/05-项目里程碑.md)
+- **1. 需求** :mag:
+  - [需求概述](/needs/)
+  - [目标用户画像](/needs/02-目标用户画像.md)
+  - [竞品分析](/needs/04-竞品分析.md)
+  - [机会预判分析](/needs/opportunity-analysis.md)
+  - [竞品分析（高端定制版）](/needs/competitor-analysis-v2.md)
 
-- **产品方案**
-  - [产品概述](/product/)
+- **2. 解决方案** :bulb:
+  - [方案概述](/solution/)
+  - [💡 项目起源：原始点子](/solution/00-项目起源-原始点子.md)
+  - [愿景与使命](/solution/vision.md)
+  - [项目里程碑](/solution/05-项目里程碑.md)
 
-- **商业模式** :rocket:
+- **3. 商业模式** :rocket:
   - [模式总览](/business/)
 
   - **学校社团课**
@@ -42,14 +43,20 @@
     - [运营标准](/business/weekend/04-operations.md)
     - [财务模型](/business/weekend/05-finance.md)
     - [竞争壁垒](/business/weekend/06-barrier.md)
+  - [财务模型](/business/financial-model.md)
 
-- **运营手册**
-  - [运营概述](/operations/)
-  - [开业筹备](/operations/startup.md)
-  - [日常运营](/operations/daily.md)
-  - [师资管理](/operations/teachers.md)
-  - [家长服务](/operations/parents.md)
-  - [安全管理](/operations/safety.md)
+- **4. 增长** :chart_with_upwards_trend:
+  - [增长概述](/growth/)
+  - [开业筹备](/growth/startup.md)
+  - [日常运营](/growth/daily.md)
+  - [师资管理](/growth/teachers.md)
+  - [家长服务](/growth/parents.md)
+  - [安全管理](/growth/safety.md)
+  - [课程体系框架](/growth/curriculum-framework.md)
+
+- **5. 壁垒** :shield:
+  - [壁垒概述](/barriers/)
+  - [核心价值主张](/barriers/03-核心价值主张.md)
 
 - **附录**
   - [更新日志](/changelog.md)

@@ -44,10 +44,10 @@ OTTO 123 提供三种商业模式，适应不同资源条件和战略目标：
 ## 机会预判分析
 
 基于一堂方法论的系统分析：
-- [基础版分析](opportunity-analysis.md) - 市场机会判断
-- [竞品分析](competitor-analysis-v2.md) - **高端可扩展定制定位**
+- [机会预判分析](/needs/opportunity-analysis.md) - 市场机会判断
+- [竞品分析](/needs/competitor-analysis-v2.md) - **高端可扩展定制定位**
 - [财务模型](financial-model.md) - 3年财务预测
-- [课程体系](curriculum-framework.md) - L1-L5完整进阶路径
+- [课程体系](/growth/curriculum-framework.md) - L1-L5完整进阶路径
 - **核心结论**：高端开放生态 vs 乐高封闭生态，差异化竞争
 - **战略定位**："乐高是iPhone，OTTO是Android——开放、可定制、越玩越值钱"
 - **关键数字**：启动资金25-35万，Year 3净利润56万，25所学校

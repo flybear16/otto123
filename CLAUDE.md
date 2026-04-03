@@ -17,13 +17,14 @@ docsify serve .
 
 ## Architecture
 
-### 文档体系
+### 文档体系（一堂五步法）
 
 ```
-overview/          # 项目概述（愿景、用户画像、价值主张、竞品分析、里程碑）
-product/           # 产品方案
-business/          # 商业模式（school/ daycare/ weekend/）+ 市场分析文件
-operations/        # 运营手册（开业、日常、师资、家长、安全）
+needs/             # 1. 需求（用户画像、竞品分析、机会预判）
+solution/          # 2. 解决方案（愿景、产品、里程碑）
+business/          # 3. 商业模式（school/ daycare/ weekend/）+ 财务模型
+growth/            # 4. 增长（运营手册、课程体系）
+barriers/          # 5. 壁垒（核心价值主张）
 src/               # 源代码占位（固件/课程/工具，独立仓库）
 _archive/prd/      # PRD 开发过程存档（brainstorm/ compound/ ideation/ plan/ review/ work/ plans/）
 _media/            # Docsify 静态资源（logo、favicon、PWA manifest）

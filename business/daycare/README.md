@@ -11,9 +11,6 @@
 3. [产品服务设计](/business/daycare/03-product)
 4. [运营执行手册](/business/daycare/04-operations)
 5. [财务模型分析](/business/daycare/05-finance)
-6. [招生留存策略](/business/daycare/06-enrollment)
-7. [风险管控预案](/business/daycare/07-risk)
-8. [落地时间表](/business/daycare/08-timeline)
 
 ## 方案概述
 
