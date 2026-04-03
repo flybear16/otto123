@@ -111,7 +111,7 @@
                 .replace('raw.githubusercontent.com', 'github.com')
                 .replace(/\/master/, '/blob/master')
             } else {
-              url = 'https://github.com/flybear16/otto123/blob/main/docs/' + vm.route.file
+              url = 'https://github.com/flybear16/otto123/blob/main/' + vm.route.file
             }
             var editHtml = '[:memo: 编辑文档](' + url + ')\n'
             return editHtml + html
@@ -134,5 +134,8 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
   <!-- Image Zoom -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- Mermaid -->
+  <script src="//cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-mermaid@2/dist/docsify-mermaid.js"></script>
 </body>
 </html>

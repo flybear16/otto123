@@ -17,22 +17,17 @@ docsify serve .
 
 ## Architecture
 
-### 文档体系（docs/）
-
-编号前缀目录为核心文档流，PRD 开发流程存放在 docs/ 子目录中：
+### 文档体系
 
 ```
-docs/
-├── 01-项目概述/ ~ 07-附录/   # 正式文档（编号排序）
-├── brainstorm/                # 头脑风暴记录
-├── ideation/                  # 创意点子
-├── plan/                      # PRD 结构评审
-├── work/                      # 文档打磨
-├── review/                    # 多角色评审
-└── compound/                  # 最终 PRD（2026-04-03-otto-robot-prd-final.md）
+overview/          # 项目概述（愿景、用户画像、价值主张、竞品分析、里程碑）
+product/           # 产品方案
+business/          # 商业模式（school/ daycare/ weekend/）
+operations/        # 运营手册（开业、日常、师资、家长、安全）
+_archive/prd/       # PRD 开发过程存档（brainstorm/ compound/ 等）
 ```
 
-最终 PRD 定义了 33 项需求（语音交互、Web配置、硬件DIY、动作编程、竞赛平台、权限管理、多用户共享、设备管理），是产品开发的核心参考文档。
+最终 PRD 位于 `_archive/prd/compound/2026-04-03-otto-robot-prd-final.md`，定义了 33 项需求。
 
 ### 业务文档（business/）
 
