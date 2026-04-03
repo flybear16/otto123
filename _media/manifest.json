@@ -1,0 +1,15 @@
+{
+  "name": "OTTO 123",
+  "short_name": "OTTO 123",
+  "description": "开源机器人创客教育",
+  "icons": [
+    {
+      "src": "/_media/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#42b983",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

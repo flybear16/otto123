@@ -3,7 +3,7 @@
 > 产出时间：2026-04-03
 > 阶段：Step 4 - Work（文档打磨）
 > 输入：PRD v2（Plan 审查后）
-> 输出：PRD v2-polished
+> 输出：PRD v2-polished → 作为 Review 阶段输入
 
 ## 打磨操作清单
 
@@ -29,7 +29,7 @@
 - [x] R26 补充拦截后处理
 - [x] R27 补充摘要生成方式
 
-## 文件
+## 说明
 
-输出文件为 PRD v2-polished，已作为 Review 阶段输入。
-（Work 阶段产物直接迭代在 PRD 文件中，不单独保留副本）
+Work 阶段直接迭代在 PRD 文件中，不单独保留副本。
+输出为 PRD v2-polished，已作为 Step 5 Review 的输入。

@@ -28,7 +28,8 @@
     - [合作模式](business/daycare/02-models.md)
     - [产品服务](business/daycare/03-product.md)
     - [运营手册](business/daycare/04-operations.md)
-    - [财务模型](business/daycare/05-finance.md)
+    <!-- TODO: 05-finance.md 待创建 -->
+    <!-- - [财务模型](business/daycare/05-finance.md) -->
   
   - **C端周末班**
     - [方案概述](business/weekend/)
@@ -45,6 +46,7 @@
 - **附录**
   - [更新日志](changelog.md)
   - [贡献指南](CONTRIBUTING.md)
+  - [PRD 文档](docs/compound/2026-04-03-otto-robot-prd-final.md)
 
 - **链接**
   - [GitHub](https://github.com/flybear16/otto123)
