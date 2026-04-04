@@ -6,14 +6,14 @@
 
 ## 目录
 
-1. [市场机会分析](/business/school/01-overview)
-2. [合作模式设计](/business/school/02-model)
-3. [课程产品体系](/business/school/03-curriculum)
-4. [商务谈判策略](/business/school/04-negotiation)
-5. [执行落地SOP](/business/school/05-operations)
-6. [财务模型与定价](/business/school/06-finance)
-7. [风险管控](/business/school/07-risk)
-8. [附件模板](/business/school/08-appendix)
+1. [市场机会分析](/business/school/01-overview.md)
+2. [合作模式设计](/business/school/02-model.md)
+3. [课程产品体系](/business/school/03-curriculum.md)
+4. [商务谈判策略](/business/school/04-negotiation.md)
+5. [执行落地SOP](/business/school/05-operations.md)
+6. [财务模型与定价](/business/school/06-finance.md)
+7. [风险管控](/business/school/07-risk.md)
+8. [附件模板](/business/school/08-appendix.md)
 
 ## 方案概述
 

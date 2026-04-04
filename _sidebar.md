@@ -11,9 +11,12 @@
 
 - **2. 解决方案** :bulb:
   - [方案概述](/solution/)
-  - [💡 项目起源：原始点子](/solution/00-项目起源-原始点子.md)
-  - [愿景与使命](/solution/vision.md)
-  - [项目里程碑](/solution/05-项目里程碑.md)
+  - [产品定义与价值主张](/solution/01-产品定义与价值主张.md)
+  - [最小可行产品（MVP）](/solution/02-最小可行产品.md)
+  - [产品功能体系](/solution/03-产品功能体系.md)
+  - [核心指标体系](/solution/04-核心指标体系.md)
+  - [迭代路线图](/solution/05-迭代路线图.md)
+  - [项目起源](/solution/00-项目起源-原始点子.md)
 
 - **3. 商业模式** :rocket:
   - [模式总览](/business/)

@@ -6,12 +6,12 @@
 
 ## 目录
 
-1. [市场定位分析](/business/weekend/01-overview)
-2. [产品体系设计](/business/weekend/02-product)
-3. [获客转化策略](/business/weekend/03-acquisition)
-4. [运营交付标准](/business/weekend/04-operations)
-5. [财务模型分析](/business/weekend/05-finance)
-6. [竞争壁垒构建](/business/weekend/06-barrier)
+1. [市场定位分析](/business/weekend/01-overview.md)
+2. [产品体系设计](/business/weekend/02-product.md)
+3. [获客转化策略](/business/weekend/03-acquisition.md)
+4. [运营交付标准](/business/weekend/04-operations.md)
+5. [财务模型分析](/business/weekend/05-finance.md)
+6. [竞争壁垒构建](/business/weekend/06-barrier.md)
 
 ## 方案概述
 

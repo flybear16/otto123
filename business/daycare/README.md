@@ -6,11 +6,11 @@
 
 ## 目录
 
-1. [市场机会分析](/business/daycare/01-overview)
-2. [合作模式详解](/business/daycare/02-models)
-3. [产品服务设计](/business/daycare/03-product)
-4. [运营执行手册](/business/daycare/04-operations)
-5. [财务模型分析](/business/daycare/05-finance)
+1. [市场机会分析](/business/daycare/01-overview.md)
+2. [合作模式详解](/business/daycare/02-models.md)
+3. [产品服务设计](/business/daycare/03-product.md)
+4. [运营执行手册](/business/daycare/04-operations.md)
+5. [财务模型分析](/business/daycare/05-finance.md)
 
 ## 方案概述
 
