@@ -49,8 +49,9 @@ OTTO 123 提供三种商业模式，适应不同资源条件和战略目标：
 ## 机会预判分析
 
 基于一堂方法论的系统分析：
-- [机会预判分析](/needs/opportunity-analysis.md) - 市场机会判断
-- [竞品分析](/needs/competitor-analysis-v2.md) - **高端可扩展定制定位**
+- [市场量化分析](/needs/04-市场量化分析.md) - TAM/SAM/SOM 市场规模
+- [竞品格局与对标分析](/needs/05-竞品格局与对标分析.md) - **高端可扩展定制定位**
+- [需求-产品-商业匹配分析](/needs/06-需求-产品-商业匹配分析.md) - 需求匹配度评估
 - [财务模型](financial-model.md) - 3年财务预测
 - [课程体系](/growth/curriculum-framework.md) - L1-L5完整进阶路径
 - **核心结论**：高端开放生态 vs 乐高封闭生态，差异化竞争
