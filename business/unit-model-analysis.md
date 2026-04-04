@@ -553,4 +553,4 @@ Year 3（扩张期）—— 规模化
 *文档版本：v1.0*
 *位置：otto123/business/unit-model-analysis.md*
 *方法论来源：一堂·十大单元模型*
-*配套文档：[financial-model.md](financial-model.md)、[school/06-finance.md](school/06-finance.md)、[daycare/05-finance.md](daycare/05-finance.md)、[weekend/05-finance.md](weekend/05-finance.md)*
+*配套文档：[financial-model.md](/business/financial-model.md)、[school/06-finance.md](/business/school/06-finance.md)、[daycare/05-finance.md](/business/daycare/05-finance.md)、[weekend/05-finance.md](/business/weekend/05-finance.md)*
