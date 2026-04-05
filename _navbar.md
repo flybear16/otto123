@@ -4,4 +4,5 @@
 - [商业模式](/business/)
 - [增长](/growth/)
 - [壁垒](/barriers/)
+- [技术架构](/system/)
 - [GitHub](https://github.com/flybear16/otto123)
