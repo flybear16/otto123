@@ -20,6 +20,10 @@
 
 - **3. 商业模式** :rocket:
   - [模式总览](/business/)
+  - [商业模式定义](/business/01-商业模式定义.md)
+  - [关键收益与成本项](/business/02-关键收益与成本项.md)
+  - [单元模型与健康度](/business/03-单元模型与健康度.md)
+  - [动态预测与战略决策](/business/04-动态预测与战略决策.md)
 
   - **学校社团课**
     - [方案概述](/business/school/)
@@ -48,8 +52,8 @@
     - [运营标准](/business/weekend/04-operations.md)
     - [财务模型](/business/weekend/05-finance.md)
     - [竞争壁垒](/business/weekend/06-barrier.md)
-  - [财务模型](/business/financial-model.md)
-  - [单元模型分析](/business/unit-model-analysis.md)
+  - [财务模型](/business/04-动态预测与战略决策.md)
+  - [单元模型分析](/business/03-单元模型与健康度.md)
 
 - **4. 增长** :chart_with_upwards_trend:
   - [增长概述](/growth/)
