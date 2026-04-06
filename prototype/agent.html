@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otto Robot - 智能体设置</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        .toggle-switch {
+            width: 44px;
+            height: 26px;
+            border-radius: 13px;
+            background: #cbd5e1;
+            position: relative;
+            cursor: pointer;
+            transition: background 0.2s;
+            flex-shrink: 0;
+        }
+        .toggle-switch.active {
+            background: #6366f1;
+        }
+        .toggle-switch::after {
+            content: '';
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #ffffff;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+        }
+        .toggle-switch.active::after {
+            transform: translateX(18px);
+        }
+        .setting-row {
+            display: flex;
+            align-items: center;
+            padding: 14px 16px;
+            border-bottom: 0.5px solid #f1f5f9;
+            gap: 12px;
+        }
+        .setting-row:last-child {
+            border-bottom: none;
+        }
+        .setting-info {
+            flex: 1;
+            min-width: 0;
+        }
+        .setting-name {
+            font-size: 15px;
+            font-weight: 500;
+            color: #1e293b;
+        }
+        .setting-desc {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 2px;
+        }
+        .setting-value {
+            font-size: 13px;
+            color: #64748b;
+            flex-shrink: 0;
+        }
+        .radio-group {
+            display: flex;
+            gap: 8px;
+            padding: 12px 16px;
+            flex-wrap: wrap;
+        }
+        .radio-option {
+            padding: 8px 14px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 500;
+            border: 1.5px solid #e2e8f0;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .radio-option.active {
+            border-color: #6366f1;
+            background: #e0e7ff;
+            color: #6366f1;
+        }
+        .nav-back {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 16px;
+            color: #6366f1;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+            background: #fff;
+            border-bottom: 0.5px solid #f1f5f9;
+            flex-shrink: 0;
+        }
+        .nav-back i {
+            font-size: 14px;
+        }
+        .slider-track {
+            width: 100%;
+            height: 4px;
+            background: #e2e8f0;
+            border-radius: 2px;
+            position: relative;
+            margin-top: 8px;
+        }
+        .slider-fill {
+            height: 100%;
+            background: #6366f1;
+            border-radius: 2px;
+        }
+        .slider-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #6366f1;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 1px 4px rgba(99,102,241,0.4);
+            border: 3px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-frame">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <span class="status-time">9:41</span>
+            <div class="status-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- Nav Back -->
+        <a class="nav-back" href="robot.html">
+            <i class="fas fa-chevron-left"></i>
+            返回机器人管理
+        </a>
+
+        <!-- Content -->
+        <div class="phone-content">
+            <!-- Agent Status Card -->
+            <div class="card" style="text-align:center;padding:20px;">
+                <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:12px;">
+                    <div style="width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,#6366f1,#8b5cf6);display:flex;align-items:center;justify-content:center;">
+                        <i class="fas fa-brain" style="font-size:24px;color:#fff;"></i>
+                    </div>
+                    <div style="text-align:left;">
+                        <div style="font-size:18px;font-weight:700;color:#1e293b;">Otto 小助手</div>
+                        <div style="display:flex;align-items:center;gap:4px;">
+                            <div class="pulse-dot" style="width:6px;height:6px;"></div>
+                            <span style="font-size:12px;color:#10b981;">已连接 · aipen 服务</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size:12px;color:#94a3b8;">
+                    <i class="fas fa-microchip" style="margin-right:3px;"></i>
+                    ASR → LLM → TTS 管道正常运行
+                </div>
+            </div>
+
+            <!-- AI Model Selection -->
+            <div class="section-title">AI 模型</div>
+            <div class="card" style="padding:0;overflow:hidden;">
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#e0e7ff;color:#6366f1;">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">对话模型</div>
+                        <div class="setting-desc">语音对话使用的大语言模型</div>
+                    </div>
+                    <span class="setting-value">GLM-4 <i class="fas fa-chevron-right list-arrow" style="margin-left:4px;"></i></span>
+                </div>
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#f3e8ff;color:#8b5cf6;">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">编程助手模型</div>
+                        <div class="setting-desc">编程创作时使用的 AI 模型</div>
+                    </div>
+                    <span class="setting-value">GLM-4 <i class="fas fa-chevron-right list-arrow" style="margin-left:4px;"></i></span>
+                </div>
+            </div>
+
+            <!-- Voice Settings -->
+            <div class="section-title">语音设置</div>
+            <div class="card" style="padding:0;overflow:hidden;">
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#dcfce7;color:#10b981;">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">语音识别 (ASR)</div>
+                        <div class="setting-desc">中文普通话 · 实时流式识别</div>
+                    </div>
+                    <span class="badge badge-success">在线</span>
+                </div>
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#fef3c7;color:#f59e0b;">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">语音合成 (TTS)</div>
+                        <div class="setting-desc">TTS 引擎与音色配置</div>
+                    </div>
+                    <span class="setting-value">童声 <i class="fas fa-chevron-right list-arrow" style="margin-left:4px;"></i></span>
+                </div>
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#fee2e2;color:#ef4444;">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">离线唤醒词</div>
+                        <div class="setting-desc">ESP-SR 本地唤醒，无需联网</div>
+                    </div>
+                    <span class="setting-value">"小奥小奥" <i class="fas fa-chevron-right list-arrow" style="margin-left:4px;"></i></span>
+                </div>
+            </div>
+
+            <!-- Personality -->
+            <div class="section-title">性格与风格</div>
+            <div class="card" style="padding:0;overflow:hidden;">
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#fce7f3;color:#ec4899;">
+                        <i class="fas fa-masks-theater"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">对话风格</div>
+                        <div class="setting-desc">影响 AI 回复的语气和方式</div>
+                    </div>
+                    <span class="setting-value">友好活泼 <i class="fas fa-chevron-right list-arrow" style="margin-left:4px;"></i></span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">选择对话风格</div>
+                <div class="radio-group" style="padding:0;">
+                    <div class="radio-option" style="padding:10px 16px;">
+                        <i class="fas fa-user-tie" style="margin-right:4px;"></i> 专业严谨
+                    </div>
+                    <div class="radio-option active" style="padding:10px 16px;">
+                        <i class="fas fa-face-smile" style="margin-right:4px;"></i> 友好活泼
+                    </div>
+                    <div class="radio-option" style="padding:10px 16px;">
+                        <i class="fas fa-graduation-cap" style="margin-right:4px;"></i> 耐心教导
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Prompt -->
+            <div class="card">
+                <div class="card-title">自定义系统提示词</div>
+                <div style="background:#f8fafc;border-radius:10px;padding:12px;font-size:13px;color:#475569;line-height:1.7;border:1px solid #e2e8f0;">
+                    你是 Otto 机器人助手，面向 12-15 岁的初中生。你的任务是帮助学生编程学习，解答编程问题时要耐心引导而不是直接给答案。回复要简洁易懂，适当使用比喻和类比。
+                </div>
+                <button style="margin-top:10px;padding:8px 16px;border-radius:8px;background:#f1f5f9;color:#64748b;font-size:13px;font-weight:500;border:none;">
+                    <i class="fas fa-edit" style="margin-right:4px;"></i>编辑提示词
+                </button>
+            </div>
+
+            <!-- Response Settings -->
+            <div class="section-title">响应设置</div>
+            <div class="card" style="padding:0;overflow:hidden;">
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#e0f2fe;color:#0ea5e9;">
+                        <i class="fas fa-gauge-high"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">响应速度</div>
+                        <div style="display:flex;align-items:center;gap:6px;margin-top:6px;">
+                            <span style="font-size:11px;color:#94a3b8;">慢</span>
+                            <div class="slider-track" style="flex:1;">
+                                <div class="slider-fill" style="width:70%;"></div>
+                                <div class="slider-thumb" style="left:70%;"></div>
+                            </div>
+                            <span style="font-size:11px;color:#94a3b8;">快</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#fef3c7;color:#f59e0b;">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">内容安全</div>
+                        <div class="setting-desc">过滤不适合未成年人的内容</div>
+                    </div>
+                    <div class="toggle-switch active"></div>
+                </div>
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#f3e8ff;color:#8b5cf6;">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">多语言支持</div>
+                        <div class="setting-desc">允许使用英语对话练习</div>
+                    </div>
+                    <div class="toggle-switch active"></div>
+                </div>
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#dcfce7;color:#10b981;">
+                        <i class="fas fa-clock-rotate-left"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">对话记忆</div>
+                        <div class="setting-desc">记住上下文，支持连续对话</div>
+                    </div>
+                    <div class="toggle-switch active"></div>
+                </div>
+            </div>
+
+            <!-- Knowledge Base -->
+            <div class="section-title">知识库</div>
+            <div class="card" style="padding:0;overflow:hidden;">
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#e0e7ff;color:#6366f1;">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">编程知识库</div>
+                        <div class="setting-desc">Python、C++、机器人控制等</div>
+                    </div>
+                    <div class="toggle-switch active"></div>
+                </div>
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#fef3c7;color:#f59e0b;">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">Otto 硬件手册</div>
+                        <div class="setting-desc">舵机参数、传感器用法等</div>
+                    </div>
+                    <div class="toggle-switch active"></div>
+                </div>
+                <div class="setting-row">
+                    <div class="settings-icon" style="background:#fce7f3;color:#ec4899;">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <div class="setting-info">
+                        <div class="setting-name">自定义知识库</div>
+                        <div class="setting-desc">上传文档扩展 AI 知识范围</div>
+                    </div>
+                    <i class="fas fa-chevron-right list-arrow"></i>
+                </div>
+            </div>
+
+            <!-- Save Button -->
+            <div style="padding:16px;">
+                <button style="width:100%;padding:14px;border-radius:12px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;font-size:15px;font-weight:600;border:none;box-shadow:0 4px 12px rgba(99,102,241,0.3);">
+                    <i class="fas fa-check" style="margin-right:6px;"></i>保存设置
+                </button>
+            </div>
+
+            <div style="height:20px;"></div>
+        </div>
+    </div>
+</body>
+</html>
