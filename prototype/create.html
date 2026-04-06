@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otto Robot - 编程创作</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="phone-frame">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <span class="status-time">9:41</span>
+            <div class="status-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="phone-content">
+            <!-- Header -->
+            <div class="page-header">
+                <h1 style="font-size:24px;">编程创作</h1>
+                <p>用积木块让 Otto 动起来</p>
+            </div>
+
+            <!-- Filter Tags -->
+            <div class="filter-scroll" style="margin-top:4px;">
+                <div class="filter-tag active">全部</div>
+                <div class="filter-tag">机器人舞蹈</div>
+                <div class="filter-tag">音乐配合</div>
+                <div class="filter-tag">挑战任务</div>
+                <div class="filter-tag">AI 生成</div>
+            </div>
+
+            <!-- New Project Button -->
+            <div style="padding:12px 16px 0;">
+                <button style="width:100%;padding:14px;border-radius:14px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;font-size:15px;font-weight:600;border:none;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 4px 12px rgba(99,102,241,0.3);">
+                    <i class="fas fa-plus-circle"></i>
+                    新建作品
+                </button>
+            </div>
+
+            <!-- Works Grid -->
+            <div class="section-title" style="margin-top:16px;">我的作品 <span style="font-size:13px;font-weight:400;color:#94a3b8;">(12)</span></div>
+            <div class="work-grid">
+                <!-- Work 1 -->
+                <div class="work-card">
+                    <div class="work-thumb" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);display:flex;align-items:center;justify-content:center;">
+                        <i class="fas fa-robot" style="font-size:32px;color:rgba(255,255,255,0.8);"></i>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-title">太空漫步</div>
+                        <div class="work-meta">
+                            <span class="work-date">4月4日</span>
+                            <div class="work-tags">
+                                <span class="work-tag" style="background:#e0e7ff;color:#4f46e5;">舞蹈</span>
+                            </div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:8px;margin-top:6px;">
+                            <span class="badge badge-info" style="font-size:9px;padding:1px 5px;"><i class="fas fa-wand-magic-sparkles" style="margin-right:2px;"></i>AI辅助</span>
+                            <span style="font-size:10px;color:#94a3b8;"><i class="fas fa-share" style="margin-right:2px;"></i>24</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work 2 -->
+                <div class="work-card">
+                    <div class="work-thumb" style="background:linear-gradient(135deg,#10b981,#34d399);display:flex;align-items:center;justify-content:center;">
+                        <i class="fas fa-music" style="font-size:32px;color:rgba(255,255,255,0.8);"></i>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-title">节奏大师</div>
+                        <div class="work-meta">
+                            <span class="work-date">4月3日</span>
+                            <div class="work-tags">
+                                <span class="work-tag" style="background:#dcfce7;color:#16a34a;">音乐</span>
+                            </div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:8px;margin-top:6px;">
+                            <span style="font-size:10px;color:#94a3b8;"><i class="fas fa-code-branch" style="margin-right:2px;"></i>v3</span>
+                            <span style="font-size:10px;color:#94a3b8;"><i class="fas fa-share" style="margin-right:2px;"></i>18</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work 3 -->
+                <div class="work-card">
+                    <div class="work-thumb" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);display:flex;align-items:center;justify-content:center;">
+                        <i class="fas fa-person-running" style="font-size:32px;color:rgba(255,255,255,0.8);"></i>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-title">障碍赛跑</div>
+                        <div class="work-meta">
+                            <span class="work-date">4月1日</span>
+                            <div class="work-tags">
+                                <span class="work-tag" style="background:#fef3c7;color:#d97706;">挑战</span>
+                            </div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:8px;margin-top:6px;">
+                            <span style="font-size:10px;color:#94a3b8;"><i class="fas fa-code-branch" style="margin-right:2px;"></i>v1</span>
+                            <span style="font-size:10px;color:#94a3b8;"><i class="fas fa-share" style="margin-right:2px;"></i>8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work 4 -->
+                <div class="work-card">
+                    <div class="work-thumb" style="background:linear-gradient(135deg,#ec4899,#f472b6);display:flex;align-items:center;justify-content:center;">
+                        <i class="fas fa-heart" style="font-size:32px;color:rgba(255,255,255,0.8);"></i>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-title">心动舞蹈</div>
+                        <div class="work-meta">
+                            <span class="work-date">3月28日</span>
+                            <div class="work-tags">
+                                <span class="work-tag" style="background:#fce7f3;color:#db2777;">舞蹈</span>
+                            </div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:8px;margin-top:6px;">
+                            <span class="badge badge-info" style="font-size:9px;padding:1px 5px;"><i class="fas fa-wand-magic-sparkles" style="margin-right:2px;"></i>AI辅助</span>
+                            <span style="font-size:10px;color:#94a3b8;"><i class="fas fa-share" style="margin-right:2px;"></i>42</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work 5 -->
+                <div class="work-card">
+                    <div class="work-thumb" style="background:linear-gradient(135deg,#3b82f6,#60a5fa);display:flex;align-items:center;justify-content:center;">
+                        <i class="fas fa-snowflake" style="font-size:32px;color:rgba(255,255,255,0.8);"></i>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-title">冰雪奇缘</div>
+                        <div class="work-meta">
+                            <span class="work-date">3月25日</span>
+                            <div class="work-tags">
+                                <span class="work-tag" style="background:#dbeafe;color:#2563eb;">舞蹈</span>
+                            </div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:8px;margin-top:6px;">
+                            <span style="font-size:10px;color:#94a3b8;"><i class="fas fa-code-branch" style="margin-right:2px;"></i>v2</span>
+                            <span style="font-size:10px;color:#94a3b8;"><i class="fas fa-share" style="margin-right:2px;"></i>15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work 6 -->
+                <div class="work-card">
+                    <div class="work-thumb" style="background:linear-gradient(135deg,#8b5cf6,#a78bfa);display:flex;align-items:center;justify-content:center;">
+                        <i class="fas fa-drum" style="font-size:32px;color:rgba(255,255,255,0.8);"></i>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-title">架子鼓 Otto</div>
+                        <div class="work-meta">
+                            <span class="work-date">3月20日</span>
+                            <div class="work-tags">
+                                <span class="work-tag" style="background:#f3e8ff;color:#7c3aed;">音乐</span>
+                            </div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:8px;margin-top:6px;">
+                            <span style="font-size:10px;color:#94a3b8;"><i class="fas fa-code-branch" style="margin-right:2px;"></i>v1</span>
+                            <span style="font-size:10px;color:#94a3b8;"><i class="fas fa-share" style="margin-right:2px;"></i>31</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height:20px;"></div>
+        </div>
+
+        <!-- FAB: 3D Preview -->
+        <button class="fab-btn" title="3D 预览">
+            <i class="fas fa-cube"></i>
+        </button>
+
+        <!-- Tab Bar -->
+        <div class="tab-bar">
+            <a class="tab-item" href="home.html">
+                <i class="fas fa-home"></i>
+                <span>首页</span>
+            </a>
+            <a class="tab-item" href="robot.html">
+                <i class="fas fa-robot"></i>
+                <span>机器人</span>
+            </a>
+            <a class="tab-item" href="chat.html">
+                <i class="fas fa-comment-dots"></i>
+                <span>对话</span>
+            </a>
+            <a class="tab-item active" href="create.html">
+                <i class="fas fa-puzzle-piece"></i>
+                <span>创作</span>
+            </a>
+            <a class="tab-item" href="profile.html">
+                <i class="fas fa-user"></i>
+                <span>我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

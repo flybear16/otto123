@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otto Robot - 首页</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="phone-frame">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <span class="status-time">9:41</span>
+            <div class="status-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="phone-content">
+            <!-- Header -->
+            <div class="page-header" style="display:flex;align-items:center;justify-content:space-between;">
+                <div>
+                    <h1 style="font-size:24px;">Otto Robot</h1>
+                    <p>欢迎回来，小明同学 👋</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=80&h=80&fit=crop&crop=face" style="width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid #6366f1;">
+            </div>
+
+            <!-- Robot Status Card -->
+            <div class="card" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;">
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <div>
+                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+                            <div class="pulse-dot"></div>
+                            <span style="font-size:13px;font-weight:600;">OTTO-001 已连接</span>
+                        </div>
+                        <div style="font-size:22px;font-weight:700;">我的机器人</div>
+                        <div style="font-size:13px;opacity:0.85;margin-top:4px;">
+                            <i class="fas fa-battery-three-quarters" style="margin-right:4px;"></i> 78% &nbsp;
+                            <i class="fas fa-wifi" style="margin-right:4px;"></i> 信号良好
+                        </div>
+                    </div>
+                    <div style="text-align:center;">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=120&h=120&fit=crop" style="width:72px;height:72px;border-radius:20px;object-fit:cover;border:2px solid rgba(255,255,255,0.3);">
+                        <div style="font-size:11px;margin-top:4px;opacity:0.8;">v2.1.0</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="section-title">快速操作</div>
+            <div class="quick-actions">
+                <a class="quick-action" href="chat.html" style="text-decoration:none;">
+                    <div class="quick-action-icon" style="background:#e0e7ff;color:#6366f1;">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <span class="quick-action-label">开始对话</span>
+                </a>
+                <a class="quick-action" href="create.html" style="text-decoration:none;">
+                    <div class="quick-action-icon" style="background:#f3e8ff;color:#8b5cf6;">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <span class="quick-action-label">编程创作</span>
+                </a>
+                <div class="quick-action">
+                    <div class="quick-action-icon" style="background:#dcfce7;color:#10b981;">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <span class="quick-action-label">3D 预览</span>
+                </div>
+                <a class="quick-action" href="competition.html" style="text-decoration:none;">
+                    <div class="quick-action-icon" style="background:#fef3c7;color:#f59e0b;">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <span class="quick-action-label">竞赛中心</span>
+                </a>
+            </div>
+
+            <!-- Today's Class -->
+            <div class="section-title">今日课堂</div>
+            <div class="card">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        <span class="badge badge-success">进行中</span>
+                        <span style="font-size:14px;font-weight:600;color:#1e293b;">机器人舞蹈创作</span>
+                    </div>
+                    <span style="font-size:12px;color:#94a3b8;">第3节</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+                    <div style="flex:1;">
+                        <div style="display:flex;justify-content:space-between;font-size:12px;color:#64748b;margin-bottom:6px;">
+                            <span>课程进度</span>
+                            <span style="color:#6366f1;font-weight:600;">60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:60%;background:linear-gradient(90deg,#6366f1,#8b5cf6);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;padding:10px;background:#f8fafc;border-radius:10px;">
+                    <i class="fas fa-clock" style="color:#f59e0b;font-size:14px;"></i>
+                    <span style="font-size:13px;color:#64748b;">剩余时间</span>
+                    <span style="font-size:18px;font-weight:700;color:#1e293b;margin-left:auto;">23:45</span>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stat-grid" style="margin-bottom:4px;">
+                <div class="stat-card">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">作品数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">参赛次数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">28h</div>
+                    <div class="stat-label">编程时长</div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="section-title">最近动态</div>
+            <div class="card" style="padding:0;overflow:hidden;">
+                <div class="list-item">
+                    <div class="list-icon" style="background:#dcfce7;color:#10b981;">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-title">作品《太空漫步》发布成功</div>
+                        <div class="list-desc">获得 24 个点赞 · 2 小时前</div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-icon" style="background:#fef3c7;color:#f59e0b;">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-title">编程马拉松大赛报名成功</div>
+                        <div class="list-desc">比赛时间：4月20日 · 5 小时前</div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-icon" style="background:#e0e7ff;color:#6366f1;">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-title">固件更新至 v2.1.0</div>
+                        <div class="list-desc">新增音乐配合模块 · 昨天</div>
+                    </div>
+                </div>
+            </div>
+            <div style="height:20px;"></div>
+        </div>
+
+        <!-- Tab Bar -->
+        <div class="tab-bar">
+            <a class="tab-item active" href="home.html">
+                <i class="fas fa-home"></i>
+                <span>首页</span>
+            </a>
+            <a class="tab-item" href="robot.html">
+                <i class="fas fa-robot"></i>
+                <span>机器人</span>
+            </a>
+            <a class="tab-item" href="chat.html">
+                <i class="fas fa-comment-dots"></i>
+                <span>对话</span>
+            </a>
+            <a class="tab-item" href="create.html">
+                <i class="fas fa-puzzle-piece"></i>
+                <span>创作</span>
+            </a>
+            <a class="tab-item" href="profile.html">
+                <i class="fas fa-user"></i>
+                <span>我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

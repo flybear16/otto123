@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otto Robot - AI 对话</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="phone-frame">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <span class="status-time">9:41</span>
+            <div class="status-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- Chat Header -->
+        <div style="background:#fff;padding:12px 20px;border-bottom:0.5px solid #f1f5f9;display:flex;align-items:center;gap:12px;flex-shrink:0;">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=80&h=80&fit=crop" class="chat-avatar">
+            <div style="flex:1;">
+                <div style="font-size:16px;font-weight:600;color:#1e293b;">Otto 小助手</div>
+                <div style="display:flex;align-items:center;gap:4px;">
+                    <div class="pulse-dot" style="width:6px;height:6px;"></div>
+                    <span style="font-size:11px;color:#10b981;">在线</span>
+                </div>
+            </div>
+            <i class="fas fa-ellipsis-v" style="color:#94a3b8;font-size:16px;padding:8px;"></i>
+        </div>
+
+        <!-- Chat Content -->
+        <div class="phone-content" style="background:#f0f2f5;">
+            <div class="chat-container">
+                <!-- Date separator -->
+                <div style="text-align:center;margin-bottom:8px;">
+                    <span style="font-size:11px;color:#94a3b8;background:#e5e7eb;padding:2px 12px;border-radius:10px;">今天 14:30</span>
+                </div>
+
+                <!-- AI message -->
+                <div style="display:flex;gap:8px;align-items:flex-end;">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=80&h=80&fit=crop" class="chat-avatar">
+                    <div>
+                        <div class="chat-bubble chat-bubble-ai">你好，小明！我是 Otto 小助手 🤖 有什么编程问题想问我吗？</div>
+                        <div class="chat-time">14:30</div>
+                    </div>
+                </div>
+
+                <!-- User message -->
+                <div style="display:flex;flex-direction:column;align-items:flex-end;">
+                    <div class="chat-bubble chat-bubble-user">我想让机器人做一个前滚翻的动作，该怎么写代码？</div>
+                    <div class="chat-time" style="text-align:right;">14:31</div>
+                </div>
+
+                <!-- AI message with code -->
+                <div style="display:flex;gap:8px;align-items:flex-end;">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=80&h=80&fit=crop" class="chat-avatar">
+                    <div>
+                        <div class="chat-bubble chat-bubble-ai">
+                            好问题！前滚翻需要协调多个舵机的时序。核心思路是：
+                            <br><br>
+                            <div style="background:#1e293b;color:#e2e8f0;padding:10px 12px;border-radius:8px;font-family:monospace;font-size:12px;margin:8px 0;line-height:1.6;">
+                                <span style="color:#7dd3fc;">// 前滚翻动作序列</span><br>
+                                <span style="color:#c084fc;">servo</span>.setAngle(LEFT_LEG, <span style="color:#fbbf24;">90</span>)<br>
+                                <span style="color:#c084fc;">delay</span>(<span style="color:#fbbf24;">200</span>)<br>
+                                <span style="color:#c084fc;">servo</span>.setAngle(RIGHT_LEG, <span style="color:#fbbf24;">90</span>)<br>
+                                <span style="color:#c084fc;">delay</span>(<span style="color:#fbbf24;">200</span>)<br>
+                                <span style="color:#c084fc;">action</span>.forward(<span style="color:#fbbf24;">3</span>)
+                            </div>
+                            你可以在「编程创作」里用积木块试试！
+                        </div>
+                        <div class="chat-time">14:31</div>
+                    </div>
+                </div>
+
+                <!-- User message -->
+                <div style="display:flex;flex-direction:column;align-items:flex-end;">
+                    <div class="chat-bubble chat-bubble-user">delay 里面的数字单位是什么？</div>
+                    <div class="chat-time" style="text-align:right;">14:32</div>
+                </div>
+
+                <!-- AI message -->
+                <div style="display:flex;gap:8px;align-items:flex-end;">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=80&h=80&fit=crop" class="chat-avatar">
+                    <div>
+                        <div class="chat-bubble chat-bubble-ai">
+                            <code style="background:#e0e7ff;color:#4f46e5;padding:1px 6px;border-radius:4px;font-size:12px;">delay()</code> 的单位是<strong>毫秒</strong>（ms），所以 <code style="background:#e0e7ff;color:#4f46e5;padding:1px 6px;border-radius:4px;font-size:12px;">delay(200)</code> 就是暂停 0.2 秒。数值越小动作越快，但要给舵机足够的响应时间哦！
+                        </div>
+                        <div class="chat-time">14:32</div>
+                    </div>
+                </div>
+
+                <!-- Voice message indicator -->
+                <div style="display:flex;gap:8px;align-items:flex-end;">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=80&h=80&fit=crop" class="chat-avatar">
+                    <div>
+                        <div class="chat-bubble chat-bubble-ai" style="padding:12px 16px;">
+                            <div style="display:flex;align-items:center;gap:8px;">
+                                <div class="voice-wave">
+                                    <div class="voice-bar"></div>
+                                    <div class="voice-bar"></div>
+                                    <div class="voice-bar"></div>
+                                    <div class="voice-bar"></div>
+                                </div>
+                                <span style="font-size:12px;color:#64748b;">0:03</span>
+                                <i class="fas fa-play-circle" style="color:#6366f1;font-size:20px;margin-left:4px;"></i>
+                            </div>
+                        </div>
+                        <div class="chat-time">14:33</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Input Bar -->
+        <div class="chat-input-bar">
+            <button style="width:36px;height:36px;border-radius:50%;background:#f1f5f9;color:#64748b;display:flex;align-items:center;justify-content:center;border:none;font-size:16px;flex-shrink:0;">
+                <i class="fas fa-plus"></i>
+            </button>
+            <input class="chat-input" type="text" placeholder="输入消息...">
+            <button class="mic-btn">
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+
+        <!-- Tab Bar -->
+        <div class="tab-bar">
+            <a class="tab-item" href="home.html">
+                <i class="fas fa-home"></i>
+                <span>首页</span>
+            </a>
+            <a class="tab-item" href="robot.html">
+                <i class="fas fa-robot"></i>
+                <span>机器人</span>
+            </a>
+            <a class="tab-item active" href="chat.html">
+                <i class="fas fa-comment-dots"></i>
+                <span>对话</span>
+            </a>
+            <a class="tab-item" href="create.html">
+                <i class="fas fa-puzzle-piece"></i>
+                <span>创作</span>
+            </a>
+            <a class="tab-item" href="profile.html">
+                <i class="fas fa-user"></i>
+                <span>我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

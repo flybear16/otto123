@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otto Robot App — 高保真原型</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0f172a;
+            min-height: 100vh;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page-title {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 40px;
+        }
+
+        .page-title h1 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .page-title h1 span {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .page-title p {
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        .prototype-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 393px);
+            gap: 40px 48px;
+            justify-content: center;
+            max-width: 1340px;
+            margin: 0 auto;
+        }
+
+        .prototype-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .phone-wrapper {
+            width: 393px;
+            height: 852px;
+            border-radius: 44px;
+            overflow: hidden;
+            border: 1px solid #1a1a1a;
+            box-shadow:
+                0 0 0 1px rgba(255,255,255,0.05),
+                0 20px 60px rgba(0, 0, 0, 0.4),
+                0 0 40px rgba(99, 102, 241, 0.08);
+            flex-shrink: 0;
+        }
+
+        .phone-wrapper iframe {
+            width: 393px;
+            height: 852px;
+            border: none;
+            display: block;
+        }
+
+        .prototype-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #e2e8f0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .prototype-label i {
+            color: #6366f1;
+            font-size: 16px;
+        }
+
+        .prototype-label .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            background: rgba(99, 102, 241, 0.15);
+            color: #a5b4fc;
+        }
+
+        @media (max-width: 1340px) {
+            .prototype-grid {
+                grid-template-columns: repeat(2, 393px);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .prototype-grid {
+                grid-template-columns: 393px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-title">
+        <h1>Otto Robot App — <span>高保真原型</span></h1>
+        <p>iPhone 15 Pro 模拟 · 6 个核心页面 · 完整交互流程</p>
+    </div>
+
+    <div class="prototype-grid">
+        <!-- Home -->
+        <div class="prototype-item">
+            <div class="phone-wrapper">
+                <iframe src="home.html" loading="lazy"></iframe>
+            </div>
+            <div class="prototype-label">
+                <i class="fas fa-home"></i>
+                首页仪表盘
+                <span class="badge">Dashboard</span>
+            </div>
+        </div>
+
+        <!-- Robot -->
+        <div class="prototype-item">
+            <div class="phone-wrapper">
+                <iframe src="robot.html" loading="lazy"></iframe>
+            </div>
+            <div class="prototype-label">
+                <i class="fas fa-robot"></i>
+                机器人管理
+                <span class="badge">Device</span>
+            </div>
+        </div>
+
+        <!-- Chat -->
+        <div class="prototype-item">
+            <div class="phone-wrapper">
+                <iframe src="chat.html" loading="lazy"></iframe>
+            </div>
+            <div class="prototype-label">
+                <i class="fas fa-comment-dots"></i>
+                AI 语音对话
+                <span class="badge">Chat</span>
+            </div>
+        </div>
+
+        <!-- Create -->
+        <div class="prototype-item">
+            <div class="phone-wrapper">
+                <iframe src="create.html" loading="lazy"></iframe>
+            </div>
+            <div class="prototype-label">
+                <i class="fas fa-puzzle-piece"></i>
+                编程创作
+                <span class="badge">Create</span>
+            </div>
+        </div>
+
+        <!-- Competition -->
+        <div class="prototype-item">
+            <div class="phone-wrapper">
+                <iframe src="competition.html" loading="lazy"></iframe>
+            </div>
+            <div class="prototype-label">
+                <i class="fas fa-trophy"></i>
+                竞赛平台
+                <span class="badge">Competition</span>
+            </div>
+        </div>
+
+        <!-- Profile -->
+        <div class="prototype-item">
+            <div class="phone-wrapper">
+                <iframe src="profile.html" loading="lazy"></iframe>
+            </div>
+            <div class="prototype-label">
+                <i class="fas fa-user"></i>
+                个人中心
+                <span class="badge">Profile</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
