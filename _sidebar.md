@@ -82,7 +82,7 @@
   - [部署与运维架构](/system/08-部署与运维架构.md)
 
 - **附录**
-  - [App 原型演示 :iphone:](/prototype/index.html)
+  - [App 原型演示 :iphone:](https://flybear16.github.io/otto123/prototype/index.html)
   - [更新日志](/changelog.md)
   - [贡献指南](/CONTRIBUTING.md)
   - [PRD 文档](/_archive/prd/compound/2026-04-03-otto-robot-prd-final.md)
