@@ -5,4 +5,5 @@
 - [增长](/growth/)
 - [壁垒](/barriers/)
 - [技术架构](/system/)
+- [硬件扩展](/docs/otto-extension-research.md)
 - [GitHub](https://github.com/flybear16/otto123)

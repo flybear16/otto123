@@ -81,6 +81,9 @@
   - [安全架构设计](/system/07-安全架构设计.md)
   - [部署与运维架构](/system/08-部署与运维架构.md)
 
+- **7. 硬件扩展** :electric_plug:
+  - [OTTO 扩展方案调研](/docs/otto-extension-research.md)
+
 - **附录**
   - [App 原型演示 :iphone:](https://flybear16.github.io/otto123/prototype/index.html)
   - [更新日志](/changelog.md)
