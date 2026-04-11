@@ -34,35 +34,36 @@ _media/            # Docsify 静态资源（logo、favicon、PWA manifest）
 
 ### 侧边栏与导航
 
-- `_sidebar.md` — Docsify 侧边栏配置
-- `_navbar.md` — 顶部导航栏
-- `index.html` — Docsify 主题、插件、搜索配置（主题色 `#42b983`）
+* `_sidebar.md` — Docsify 侧边栏配置
+* `_navbar.md` — 顶部导航栏
+* `index.html` — Docsify 主题、插件、搜索配置（主题色 `#42b983`）
 
 **关键规则：`_sidebar.md` 中所有链接必须使用绝对路径（以 `/` 开头）**，否则在子目录页面中会解析错误（如 `operations/startup.md` 会被解析为 `operations/operations/startup.md`）。
 
 ### Docsify 插件配置
 
 `index.html` 中已加载的插件：
-- 搜索（search）、复制代码（copy-code）、分页（pagination）、Emoji、外部脚本、图片缩放
-- **Mermaid**：`mermaid@10` + `docsify-mermaid@2`，用于渲染 PRD 中的流程图
+
+* 搜索（search）、复制代码（copy-code）、分页（pagination）、Emoji、外部脚本、图片缩放
+* **Mermaid**：`mermaid@10` + `docsify-mermaid@2`，用于渲染 PRD 中的流程图
 
 ### PWA 与图标
 
-- `_media/manifest.json` — PWA manifest
-- favicon: `favicon.ico`，PNG 图标: `logo-32.png`、`logo-180.png`、`logo-192.png`
+* `_media/manifest.json` — PWA manifest
+* favicon: `favicon.ico`，PNG 图标：`logo-32.png`、`logo-180.png`、`logo-192.png`
 
 ## Conventions
 
-- 所有文档使用中文
-- 目录采用编号前缀排序：`01-`, `02-` 等
-- 图片资源统一放在 `_media/` 目录
-- PRD 流程：ideation → brainstorm → plan → work → review → compound
-- 文档包含版本号、创建日期、作者信息
+* 所有文档使用中文
+* 目录采用编号前缀排序：`01-`, `02-` 等
+* 图片资源统一放在 `_media/` 目录
+* PRD 流程：ideation → brainstorm → plan → work → review → compound
+* 文档包含版本号、创建日期、作者信息
 
 ## Custom Commands
 
-| 命令 | 用途 |
-|------|------|
+| 命令       | 用途                            |
+| -------- | ----------------------------- |
 | `/gitup` | git stage/add/commit/push 一波流 |
 
 ## Key Technical Context (PRD)
