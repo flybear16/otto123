@@ -90,6 +90,10 @@
 * **7. 硬件扩展** :electric\_plug:
   * [OTTO 扩展方案调研](/docs/otto-extension-research.md)
 
+* **8. 软件技术调研** :floppy_disk:
+  * [少儿图形化编程调研](/docs/research/2026-04-12-少儿图形化编程调研.md)
+  * [OTTO 扩展规划](/docs/plans/2026-04-12-001-research-otto-extension-plan.md)
+
 * **附录**
   * [App 原型演示 :iphone:](https://flybear16.github.io/otto123/prototype/index.html)
   * [更新日志](/changelog.md)
