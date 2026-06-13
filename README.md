@@ -1,5 +1,8 @@
 # OTTO 123 项目
 
+> **AI编程 × 智能硬件实践者** · 让想法长出骨头
+
+
 > 🚀 **让每个孩子都能创造自己的机器人**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
