@@ -69,6 +69,8 @@
   * [家长服务](/growth/parents.md)
   * [安全管理](/growth/safety.md)
   * [课程体系框架](/growth/curriculum-framework.md)
+  * [L3 仿真实验课 SOP](/growth/lesson-sop-L3-01.md)
+  * [L3 MuJoCo 仿真实验室](/growth/labs/L3-mujoco-rl/README.md)
 
 * **5. 壁垒** :shield:
   * [壁垒概述](/barriers/)

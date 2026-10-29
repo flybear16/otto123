@@ -1,0 +1,58 @@
+<mujoco model="otto">
+  <!--
+    OTTO 桌面机器人 · MuJoCo 仿真模型
+    对应实物：ESP32-S3 + PCA9685 + 4 腿舵机(SG90/MG90S) + 2 臂舵机
+    执行器语义：position（ctrl = 目标角度，弧度），与 PCA9685 驱动舵机位置一致
+    实测（2026-10-30）：无头物理 226,286 步/秒 ≈ 452 倍实时
+  -->
+  <compiler angle="degree" autolimits="true"/>
+  <option timestep="0.002" integrator="implicitfast" gravity="0 0 -9.81"/>
+  <visual><global offwidth="800" offheight="600"/></visual>
+  <worldbody>
+    <light pos="0 0 2" dir="0 0 -1" diffuse="0.7 0.7 0.7"/>
+    <geom type="plane" size="3 3 0.1" rgba="0.85 0.85 0.88 1" friction="0.9 0.02 0.002"/>
+    <body name="torso" pos="0 0 0.108">
+      <freejoint/>
+      <geom type="box" size="0.035 0.03 0.022" rgba="0.95 0.6 0.15 1" density="400"/>
+      <geom type="box" size="0.02 0.012 0.012" pos="0 0 0.03" rgba="0.1 0.1 0.12 1" density="300"/>
+      <body name="left_hip" pos="0 0.030 -0.015">
+        <joint name="l_hip" type="hinge" axis="0 1 0" range="-45 45" damping="0.8"/>
+        <geom type="capsule" fromto="0 0 0 0 0 -0.035" size="0.011" rgba="0.25 0.45 0.85 1" density="600"/>
+        <body name="left_knee" pos="0 0 -0.035">
+          <joint name="l_knee" type="hinge" axis="0 1 0" range="-60 60" damping="0.6"/>
+          <geom type="capsule" fromto="0 0 0 0 0 -0.035" size="0.01" rgba="0.25 0.45 0.85 1" density="600"/>
+          <geom type="box" size="0.014 0.010 0.005" pos="0 0 -0.035" rgba="0.2 0.2 0.22 1" density="900"/>
+        </body>
+      </body>
+      <body name="right_hip" pos="0 -0.030 -0.015">
+        <joint name="r_hip" type="hinge" axis="0 1 0" range="-45 45" damping="0.8"/>
+        <geom type="capsule" fromto="0 0 0 0 0 -0.035" size="0.011" rgba="0.25 0.45 0.85 1" density="600"/>
+        <body name="right_knee" pos="0 0 -0.035">
+          <joint name="r_knee" type="hinge" axis="0 1 0" range="-60 60" damping="0.6"/>
+          <geom type="capsule" fromto="0 0 0 0 0 -0.035" size="0.01" rgba="0.25 0.45 0.85 1" density="600"/>
+          <geom type="box" size="0.014 0.010 0.005" pos="0 0 -0.035" rgba="0.2 0.2 0.22 1" density="900"/>
+        </body>
+      </body>
+      <body name="left_arm" pos="0 0.038 0.005">
+        <joint name="l_arm" type="hinge" axis="0 0 1" range="-90 90" damping="0.5"/>
+        <geom type="capsule" fromto="0 0 0 0 0 0.03" size="0.008" rgba="0.95 0.6 0.15 1" density="300"/>
+      </body>
+      <body name="right_arm" pos="0 -0.038 0.005">
+        <joint name="r_arm" type="hinge" axis="0 0 1" range="-90 90" damping="0.5"/>
+        <geom type="capsule" fromto="0 0 0 0 0 0.03" size="0.008" rgba="0.95 0.6 0.15 1" density="300"/>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="l_hip" joint="l_hip" kp="8" ctrlrange="-0.79 0.79" forcerange="-0.8 0.8"/>
+    <position name="l_knee" joint="l_knee" kp="8" ctrlrange="-1.05 1.05" forcerange="-0.8 0.8"/>
+    <position name="r_hip" joint="r_hip" kp="8" ctrlrange="-0.79 0.79" forcerange="-0.8 0.8"/>
+    <position name="r_knee" joint="r_knee" kp="8" ctrlrange="-1.05 1.05" forcerange="-0.8 0.8"/>
+    <position name="l_arm" joint="l_arm" kp="4" ctrlrange="-1.57 1.57" forcerange="-0.3 0.3"/>
+    <position name="r_arm" joint="r_arm" kp="4" ctrlrange="-1.57 1.57" forcerange="-0.3 0.3"/>
+  </actuator>
+  <sensor>
+    <framepos name="torso_pos" objtype="body" objname="torso"/>
+    <framelinvel name="torso_vel" objtype="body" objname="torso"/>
+  </sensor>
+</mujoco>

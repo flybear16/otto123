@@ -1,0 +1,7 @@
+# 运行产物（学生机本地生成）
+best_gait.json
+otto_ppo.zip
+otto_ppo/
+trajectory.png
+__pycache__/
+*.pyc
