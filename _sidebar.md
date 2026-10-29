@@ -91,6 +91,7 @@
   * [OTTO 扩展方案调研](/docs/otto-extension-research.md)
 
 * **8. 软件技术调研** :floppy_disk:
+  * [开源人形机器人生态调研](/docs/research/2026-10-30-开源人形机器人生态调研.md)
   * [少儿图形化编程调研](/docs/research/2026-04-12-少儿图形化编程调研.md)
   * [豆包实时语音 3.0（Seeduplex）调研](/docs/research/2026-06-18-aihot-doubao-voice-3.md)
   * [OTTO 扩展规划](/docs/plans/2026-04-12-001-research-otto-extension-plan.md)
